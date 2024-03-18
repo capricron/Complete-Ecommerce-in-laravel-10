@@ -36,6 +36,10 @@
     })->name('cache.clear');
 
 
+    Route::get('/tes', function(){
+        return view('tes');
+    });
+
     // STORAGE LINKED ROUTE
     Route::get('storage-link',[AdminController::class,'storageLink'])->name('storage.link');
 
